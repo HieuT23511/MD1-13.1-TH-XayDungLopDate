@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuc hanh Xay dung lop Date</title>
+</head>
+<body>
+<script>
+  class myDate {
+    day;
+    month;
+    year;
+    constructor(day, month, year) {
+      this.day = day;
+      this.month = month;
+      this.year = year;
+    }
+    getDay (){
+      return this.day;
+    }
+    getMonth (){
+      return this.month;
+    }
+    getYear (){
+      return this.year;
+    }
+    setDay (day){
+      this.day = day;
+    }
+    setMonth (month){
+      this.month = month;
+    }
+    setYear (year){
+      this.year = year;
+    }
+    setDate (day,month,year){
+        this.day = day;
+        this.month = month;
+        this.year = year;
+    }
+    toString(){
+        return `${this.day}/${this.month}/${this.year}`;
+    }
+  }
+  inputDate = new myDate(5,11,1996);
+  // console.log(inputDate)
+  inputDate.getDay();
+  inputDate.getMonth();
+  inputDate.getYear();
+  console.log(inputDate.getDay(),inputDate.getMonth(),inputDate.getYear());
+  // inputDate.setDay(23);
+  // inputDate.setMonth(5);
+  // inputDate.setYear(1997);
+  // console.log(inputDate)
+  inputDate.setDate(23,5,1997)
+  // inputDate.toString();
+  console.log(inputDate.toString());
+
+
+</script>
+</body>
+</html>
